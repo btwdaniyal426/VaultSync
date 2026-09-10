@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VaultSync - Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; color: #222; line-height: 1.7; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 18px; margin-top: 28px; }
+    p, li { font-size: 15px; }
+    .muted { color: #666; font-size: 13px; }
+    code { background: #f2f2f2; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>VaultSync Privacy Policy</h1>
+  <p class="muted">Last updated: September 10, 2026</p>
+
+  <p>VaultSync is a personal password manager and two-factor authentication vault. This policy explains what data the app handles, where it lives, and what it accesses.</p>
+
+  <h2>Data stored by the app</h2>
+  <p>All vault data created in VaultSync &mdash; saved passwords, two-factor seeds, recovery codes and settings &mdash; is stored <strong>locally on your device</strong>. Nothing is sent to VaultSync servers because no VaultSync servers exist.</p>
+
+  <h2>Google account access</h2>
+  <p>VaultSync can connect to your own Google account for two optional features:</p>
+  <ul>
+    <li><strong>Backup</strong> (desktop): with your permission, VaultSync uploads a single JSON snapshot of your vault to <strong>your own Google Drive</strong> and deletes older snapshots automatically.</li>
+    <li><strong>Inbox</strong> (desktop): with your permission, VaultSync reads Gmail message metadata (sender, subject, timestamp) to show an inbox view. The app does not send mail and does not modify messages.</li>
+    <li><strong>Sync</strong> (Android): with your permission, VaultSync downloads the latest backup JSON from your own Google Drive on launch so your vault is available offline.</li>
+  </ul>
+  <p>Each feature asks for your explicit consent separately. You can disconnect at any time from the app's Settings, and revoke access anytime at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Scopes used</h2>
+  <p>VaultSync requests only the minimum scopes each feature needs:</p>
+  <ul>
+    <li><code>drive.file</code> and <code>drive.readonly</code> &mdash; to create/read the VaultSync backup file in the account's own Drive (read-only on Android)</li>
+    <li><code>gmail.readonly</code> &mdash; to list inbox message headers for the Inbox tab</li>
+    <li><code>email</code>/<code>openid</code> &mdash; to show which account is connected</li>
+  </ul>
+
+  <h2>Third-party services</h2>
+  <p>Google (Google Drive, Gmail) processes data only as required by those optional features and is governed by Google's own privacy policy.</p>
+
+  <h2>Security</h2>
+  <p>Vault data is stored locally on your device and protected by your device login. Google OAuth tokens are stored locally; on Windows desktop they are encrypted with the OS credential store, on Android they are kept in the app's private local storage. Backup files uploaded to your Drive contain your vault in readable form &mdash; treat your Drive account as sensitive.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <strong>you@example.com</strong></p>
+</body>
+</html>
